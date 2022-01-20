@@ -1,0 +1,29 @@
+@media only screen and (max-width: 576px) {
+    .seccion1 {
+        height: 20vh;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .seccion2 {
+        background-image: none;
+      }
+}
+
+@media only screen and (max-width: 992px) {
+    .seccion1 {
+        height: 70vh;
+      }
+      .seccion1 h1 {
+        font-size: 18vh;
+      }
+    
+      .seccion1 h3 {
+        font-size: 35px;
+    
+      }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
