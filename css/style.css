@@ -860,14 +860,6 @@ label {
     height: 30vh;
   }
 
-  .textoInfo p {
-font-size: x-large;
-  }
-
-  .icons img {
-    height: 150px;
-}
-
 .infoAgustin p {
   font-size: x-large;
 }
@@ -889,6 +881,14 @@ font-size: x-large;
 .seccion1 h3 {
   font-size: 6vh;
 }
+
+.icons img {
+  height: 150px;
+}
+
+.textoInfo p {
+  font-size: x-large;
+    }
 
 .servicios {
   height: 30vh;
