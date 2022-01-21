@@ -82,12 +82,13 @@
 .seccion1 {
   text-align: center;
   background-image: url(../multimedia/img/bannerhandball.png);
+  background-size: cover;
   background-position: center;
-  max-height: 100vh;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   color: white;
+  max-height: 100vh;
 }
 
 .seccion1 {
@@ -131,6 +132,7 @@
   letter-spacing: 2px;
   line-height: 25px;
   font-size: large;
+  margin: 0px 10vw;
 }
 
 .iconos {
@@ -139,7 +141,7 @@
 }
 
 .icons img {
-  height: 15vh;
+  height: 100px;
   border-radius: 50%;
   box-shadow: 0 0 35px grey;
   background-color: #eab21b;
@@ -198,12 +200,14 @@
 .infoAgustin {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  margin: auto auto;
-  background-image: url(../multimedia/img/banner3.png);
+  padding: 10vh 10vw;
+  height: 100%;
+  background-image: url(../multimedia/img/fondoSeccion2izq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .infoAgustin h3 {
@@ -224,9 +228,14 @@
 
 .infoGrupo {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
-  margin: 0vh 8vw;
+  width: 100%;
+  padding: 10vh 10vw;
+  height: 100%;
+  background-image: url(../multimedia/img/fondoSeccion2der\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .infoGrupo h3 {
@@ -247,7 +256,7 @@
 }
 
 .infoGrupo img {
-  height: 250px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -285,14 +294,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  padding: 10vh 10vw;
   height: 100%;
-  margin: 10vh 8vw;
+  background-image: url(../multimedia/img/fondoSeccion2abaj\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .textoHandball {
-  margin-left: 5vw;
-  width: 50%;
+  width: 100%;
+  padding-left: 5%;
 }
 
 .proyectoHandball h3 {
@@ -317,12 +330,11 @@
 
 .serviciosTitulo {
   text-align: end;
-  letter-spacing: 8px;
-  color: black;
   height: 50vh;
   background-image: url(../multimedia/img/fondoServicios.png);
   background-repeat: no-repeat;
-  padding: 6vw;
+  background-size: cover;
+  padding: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,11 +351,10 @@
 .serviciosTitulo h3 {
   color: white;
   text-transform: uppercase;
-  text-align: end;
+  text-align: center;
   font-size: large;
   letter-spacing: 2px;
   background: black;
-  width: 33vw;
 }
 
 
@@ -396,6 +407,7 @@ h2 {
   background-image: url(../multimedia/img/bannerhandball3.png);
   background-repeat: none;
   padding: 10vw;
+  text-align: end;
 }
 
 
@@ -617,7 +629,39 @@ label {
   .proyectoHandball iframe {
     width: 100%;
   }
+
+  .contactoTitulo {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactoTitulo h1 {
+    font-size: 8vh;
+    width: 100%;
+  }
+
+  .contactoTitulo p {
+    font-size: medium;
+    text-align: center;
+  }
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .contactoTitulo {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactoTitulo h1 {
+    font-size: 8vh;
+    width: 100%;
+  }
+
+  .contactoTitulo p {
+    font-size: medium;
+    text-align: center;
+  }
+ }
 
 @media only screen and (max-width: 768px) {
   .seccion2 {
@@ -629,6 +673,14 @@ label {
   }
 
   .infoAgustin {
+    background-image: none;
+  }
+
+  .infoGrupo {
+    background-image: none;
+  }
+
+  .proyectoHandball {
     background-image: none;
   }
 
@@ -668,20 +720,6 @@ label {
   .imgFooter {
     height: 5vh;
   }
-
-  .contactoTitulo {
-    align-items: center;
-    text-align: center;
-  }
-
-  .contactoTitulo h1 {
-    font-size: 8vh;
-    width: 100%;
-  }
-
-  .contactoTitulo p {
-    font-size: medium;
-  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -699,7 +737,6 @@ label {
   }
 
   .infoAgustin {
-    display: flex;
     flex-direction: column-reverse;
     width: 100%;
     height: 100%;
@@ -707,6 +744,7 @@ label {
     justify-content: center;
     margin: auto auto;
     padding: 5vw;
+
   }
 
   .infoAgustin h3 {
@@ -752,7 +790,6 @@ label {
 
   .proyectoHandball {
     flex-direction: column-reverse;
-    margin: 5vh 0vw ;
     align-items: center;
     justify-content: center;
   }
@@ -769,6 +806,10 @@ label {
     letter-spacing: 1px;
   }
 
+  .proyectoHandball iframe {
+    margin-bottom: 3vh;
+  }
+
   .textoHandball {
     margin-bottom: 5vh;
     width: 80%;
@@ -777,24 +818,7 @@ label {
     justify-content: center;
     flex-direction: column;
   }
-}
 
-@media only screen and (max-width: 1200px) {
-
-}
-
-/*CONTACTO*/
-
-@media only screen and (max-width: 900px) {
-  #formulario {
-    width: 65vw;
-  }
-}
-
-/*FOOTER*/
-
-
-@media (max-width: 900px) {
   footer {
     width: 100%
   }
@@ -825,4 +849,52 @@ label {
   .box {
     width: 70vw;
   }
+
+  #formulario {
+    width: 65vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .servicios {
+    height: 30vh;
+  }
+
+  .textoInfo p {
+font-size: x-large;
+  }
+
+  .icons img {
+    height: 150px;
+}
+
+.infoAgustin p {
+  font-size: x-large;
+}
+
+.infoGrupo p {
+  font-size: x-large;
+}
+
+.proyectoHandball p {
+  font-size: x-large;
+}
+}
+
+@media only screen and (min-height: 1100px) {
+.seccion1 h1 {
+  font-size: 16vh;
+}
+
+.seccion1 h3 {
+  font-size: 6vh;
+}
+
+.servicios {
+  height: 30vh;
+}
+
+.servicios p {
+  font-size: x-large;
+}
 }
