@@ -129,15 +129,24 @@
 
 .textoInfo p {
   font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 25px;
   font-size: large;
-  margin: 0px 10vw;
+  margin: 0px 15vw;
+}
+
+.textoInfo p span{
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: large;
 }
 
 .iconos {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icons img {
@@ -221,7 +230,7 @@
 .infoAgustin p {
   width: 28vw;
   font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 25px;
   font-size: large;
 }
@@ -249,7 +258,7 @@
 
 .infoGrupo p {
   font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 25px;
   font-size: large;
   width: 28vw;
@@ -319,7 +328,7 @@
 .proyectoHandball p {
   width: 80%;
   font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 25px;
   font-size: large;
 }
@@ -644,6 +653,14 @@ label {
     font-size: medium;
     text-align: center;
   }
+
+  #formulario {
+    margin: 0px;
+  }
+
+  .formularioBox {
+    width: 90vw;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -664,6 +681,16 @@ label {
  }
 
 @media only screen and (max-width: 768px) {
+  .parrafo{
+    display: none;
+  }
+
+  .textoInfo p {
+    margin: 5px;
+    font-size: medium;
+    letter-spacing: 1px;
+  }
+  
   .seccion2 {
     background-image: none;
   }
@@ -682,6 +709,10 @@ label {
 
   .proyectoHandball {
     background-image: none;
+  }
+
+  .proyectoHandball .textoHandball {
+width: 100vw;
   }
 
   .servicios {
@@ -774,7 +805,7 @@ label {
 
   .infoGrupo p {
     width: 100%;
-    padding: 5vh 10vw;
+    padding: 5vh 0vw;
     text-align: center;
     letter-spacing: 1px;
   }
@@ -861,15 +892,15 @@ label {
   }
 
 .infoAgustin p {
-  font-size: x-large;
+  font-size: large;
 }
 
 .infoGrupo p {
-  font-size: x-large;
+  font-size: large;
 }
 
 .proyectoHandball p {
-  font-size: x-large;
+  font-size: large;
 }
 }
 
@@ -895,6 +926,26 @@ label {
 }
 
 .servicios p {
+  font-size: x-large;
+}
+
+.infoAgustin p {
+  font-size: x-large;
+}
+
+.infoGrupo {
+  padding-top: 0px;
+}
+
+.infoGrupo p {
+  font-size: x-large;
+}
+
+.proyectoHandball{
+  padding-top: 0px;
+}
+
+.proyectoHandball p {
   font-size: x-large;
 }
 }
