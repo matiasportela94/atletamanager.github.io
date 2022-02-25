@@ -13,7 +13,7 @@
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: green;
+  background: #eab21b;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -25,7 +25,7 @@
 
 .btnWsp:hover {
   text-decoration: none;
-  color: green;
+  color: #eab21b;
   background: white;
 }
 
